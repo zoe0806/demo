@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class=" js-no-overflow-scrolling">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>test1</title>
+<link rel="stylesheet" type="text/css" href="H5FullscreenPage.css">
+<link rel="stylesheet" type="text/css" href="page-animation.css">
+<style type="text/css">
+    
+    html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: arial;
+        text-align: center;
+    }
+    
+    * {
+        margin:0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    
+    .item2 {
+        background-color: #0067A6;
+    }
+    .item1 {
+        background-color: #00ABD8;
+    }
+    .item3 {
+        background-color: #008972;
+    }
+    .item4 {
+        background-color: #F5C564;
+    }
+    .item5 {
+        background-color: #F2572D;
+    }
+    .item6 {
+        background-color: #0067A6;
+    }
+    
+    .item1 .part1 {
+        position: absolute;
+        top: 100px;
+        left: 19%;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item1 .part2 {
+        position: absolute;
+        bottom: 100px;
+        right: 19%;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item3 .part1 {
+        position: absolute;
+        top: 40px;
+        left: 29%;
+        text-align: center;
+        width: 160px;
+        height: 77px;    
+		background-image: url('shi.png');
+    }
+    .item3 .part2 {
+        position: absolute;
+        bottom: 130px;
+        right: 9%;
+        text-align: center;
+        width: 274px;
+        height: 315px;
+       background-image: url('shi2.jpg');
+    }
+	.item3 .part3 {
+        position: absolute;
+        bottom: 60px;
+        right: 9%;
+        text-align: center;
+        width: 274px;
+        height: 45px;
+        background-image: url('dian4.png');
+		background-color: rgb(116, 178, 9);
+    }
+    .item2 .part1 {
+        position: absolute;
+        top: 120px;
+        right: 19%;
+        text-align: center;
+        width: 126px;
+        height: 196px;
+		background-color: rgb(235, 220, 9);
+        background-image: url('dian2.png');
+    }
+    .item2 .part3 {
+        position: absolute;
+        bottom: 60px;
+        left: 19%;
+        text-align: center;
+        width: 130px;
+        height: 115px;
+		background-color: rgb(235, 220, 9);
+        background-image: url('dian3.png');
+    }
+    .item2 .part2 {
+        position: absolute;
+        top: 40px;
+        left: 19%;
+        text-align: center;
+        width: 125px;
+        height: 53px;
+        background-image: url('youlai.png');
+    }
+	.item2 .part4 {
+        position: absolute;
+        top: 140px;
+        left: 10%;
+        text-align: center;
+        width: 143px;
+        height: 130px;
+        background-image: url('moli1.jpg');
+    }
+    .item4 .part1 {
+        position: absolute;
+        top: 100px;
+        left: 19%;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item4 .part2 {
+        position: absolute;
+        bottom: 100px;
+        right: 19%;
+        text-align: center;
+        width: 143px;
+        height: 130px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item5 .part1 {
+        position: absolute;
+        top: 160px;
+        left: 29%;
+        text-align: center;
+         width: 143px;
+        height: 130px;
+        background-image: url('moli1.jpg');
+    }
+    .item5 .part2 {
+        position: absolute;
+        top: 100px;
+        left: 29%;
+        text-align: center;
+        width: 150px;
+        height: 100px;
+       
+    }
+	 .item5 .part3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 237px;
+        background-image: url('ditu.png');
+    }
+    
+    .item6 .part2 {
+        position: absolute;
+        top: 100px;
+        left: 19%;
+        text-align: center;
+        width: 150px;
+        height: 100px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item6 .part1 {
+        position: absolute;
+        bottom: 100px;
+        left: 19%;
+        text-align: center;
+        width: 250px;
+        height: 250px;
+        background-color: rgb(116, 178, 9);
+    }
+    /*.item6 {
+        background-image: url(7634.jpg);
+        background-position: center;
+    }*/
+
+	#show {
+       position: absolute;
+    width: 130px;
+    height: 244px;
+    right: 1px;
+    top: 330px;
+    z-index: 99;
+}
+.comp_paragraph {
+    font-size: 24px;
+    color: #404449;
+    line-height: inherit;
+    padding: .3em 15px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+}
+</style>
+
+</head>
+<body class="H5FullscreenPage">
+    <div class="H5FullscreenPage-wrap">
+        <div class="item item1">
+            <h2></h2>
+            <div class="element-box-contents" style="width: 100%; height: 100%;">
+			<img id="9595411383" ctype="4" class="element comp_image editable-image" draggable="false" src="tea.jpg" style="width: 100%; height: 100%;">
+			</div>
+           <img id="show" ctype="4" class="element comp_image editable-image" draggable="false" src="show.png" style="">
+		   </div>  
+        <div class="item item2">
+            <h2></h2>
+			<div class="element-box-contents" style="width: 100%; height: 100%;">
+			<img id="9595411383" ctype="4" class="element comp_image editable-image" draggable="false" src="tea1.jpg" style="width: 100%; height: 100%;">
+			</div>
+            <div class="part part1 slideRight" data-delay="1300"></div>
+            <div class="part part2 heartBeat"></div>
+            <div class="part part3 slideLeft"></div>
+        </div>
+        <div class="item item3">
+            <div class="element-box-contents" style="width: 100%; height: 100%;">
+			<img id="9595411383" ctype="4" class="element comp_image editable-image" draggable="false" src="tea4.jpg" style="width: 100%; height: 100%;">
+			</div>
+			<div class="part part1 slideUp"></div>
+            <div class="part part2 slideDown"></div>
+        </div>
+      
+        <div class="item item5">
+            <div class="element-box-contents" style="width: 100%; height: 100%;">
+			<img id="9595411383" ctype="4" class="element comp_image editable-image" draggable="false" src="lastPageBg.jpg" style="width: 100%; height: 100%;">
+			</div>
+            <div class="part part1 rollInRight"></div>
+            <div class="part part2 rollInLeft"><div style="text-align: center;"><span style="line-height: 1; background-color: initial;"><font size="5" color="#ffffff"><b>魔丽魔力</b></font></span></div>
+</div>
+ <div class="part part3"></div>
+        </div>
+        
+    </div>
+    <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+    <script type="text/javascript" src="H5FullscreenPage.js"></script>
+    <script type="text/javascript">
+    
+    H5FullscreenPage.init({'type':2,'pageShow' : function(dom){
+        
+    },'pageHide' : function(dom){
+        //console.log(dom);
+    }});
+    
+    </script>
+</body>
+</html>
